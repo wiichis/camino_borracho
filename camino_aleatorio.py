@@ -27,7 +27,7 @@ def caminata(campo, pasos, tipo_de_borracho):
 
 def graficar(x, y):
     grafica = figure(title='Camino aleatorio', x_axis_label='pasos', y_axis_label='distancia')
-    grafica.line(x, y, legend_label='distancia media')
+    grafica.line(x, y, legend_label='distancia media',color='red')
 
     show(grafica)
 
@@ -35,7 +35,7 @@ def main(pasos, tipo_de_borracho):
     campo = Campo()
     coordenada_x, coordenada_y = caminata(campo, pasos, tipo_de_borracho)
     graficar(coordenada_x, coordenada_y)
-
+    
 
 if __name__ == '__main__':
     
